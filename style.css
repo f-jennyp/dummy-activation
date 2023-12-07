@@ -1,0 +1,624 @@
+body {
+  font-family: 'Barlow', sans-serif;
+  margin: 0 auto;
+  overflow-x: hidden;
+  background-color: black;
+  width: 100%;
+  position: relative;
+}
+
+div,
+article,
+section,
+tr,
+td,
+ul,
+ol,
+li,
+p,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+nav {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.3;
+}
+
+h4 {
+  font-size: 25px;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 1.3;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+#header {
+  padding: 20px;
+  position: relative;
+}
+
+#header .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+  max-width: 1633px;
+  padding: 10px;
+}
+
+#header .row {
+  content: "";
+  border-bottom: 1px solid #fff;
+}
+
+.logo img {
+  width: 127px;
+}
+
+.socials a {
+  font-size: 18px;
+  padding: 0 20px;
+  color: #fff;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.socials img {
+  height: 34px;
+  margin-right: 5px;
+  font-size: 26px;
+}
+
+/*---------------------------------NAV------------------------------------*/
+
+nav {
+  text-align: right;
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  max-width: 1633px;
+  margin: auto;
+}
+
+nav a {
+  width: 80px;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  margin-left: 2px;
+}
+
+
+nav ul li a {
+  color: #fff;
+  list-style: none;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav ul li {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 30px 0 0 0;
+}
+
+#header nav ul li a:hover,
+.active {
+  color: #660000
+}
+
+/*----------------------------ONLINE APPOINTMENT-------------------------------*/
+
+.appointment button {
+  background-color: rgba(0, 0, 0, 0);
+  padding: 10px;
+  border: 2px solid #660000;
+  margin: auto;
+
+}
+
+.appointment button a {
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+
+/*---------------------------------HOME------------------------------------*/
+.home {
+  margin-top: 207px;
+}
+
+.home .carousel article h1 {
+  font-size: 50px;
+  font-style: italic;
+  color: #660000;
+  margin-bottom: 25px;
+  line-height: 1.2;
+}
+
+.home .carousel article h3,
+.home .carousel article p {
+  color: #fff;
+  font-style: italic;
+}
+
+
+.home .carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.home .carousel::after {
+  content: 'JUSTICE';
+  /* color: #fff; */
+  font-weight: 700;
+  font-size: 350px;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  max-width: 823px;
+  right: 0;
+  top: 0;
+  word-break: break-all;
+  z-index: -1;
+  font-family: 'Montserrat';
+  margin-top: -184px;
+  color: #0A0A0A;
+}
+
+.home .carousel .wrapper section img {
+  width: 579px;
+  margin-top: 27px;
+}
+
+.home .carousel .wrapper {
+  display: flex;
+  width: 100%;
+  max-width: 1633px;
+  margin: auto;
+}
+
+.home .carousel article {
+  width: 40%;
+  justify-content: space-between;
+  margin-top: -30px;
+}
+
+.home .carousel article button {
+  background-color: #fff;
+  padding: 10px 20px;
+  font-size: 20px;
+  margin-top: 88px;
+}
+
+.home .carousel article button a {
+  text-decoration: none;
+  font-style: italic;
+  color: black;
+}
+
+.home .carousel section {
+  width: 50%;
+  margin: auto
+}
+
+.home .carousel button {
+  background-color: #fff;
+  padding: 20px;
+  border: none;
+  font-size: 40px;
+}
+
+.home .carousel button:hover,
+.home .carousel article button a:hover {
+  background-color: #660000;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+/*---------------------------------HOME - SERVICES------------------------------------*/
+
+.services {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #141414;
+  width: 100%;
+  max-width: 1633px;
+  margin: auto;
+  margin-top: -20px;
+}
+
+.services h3 {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.services img {
+  margin-right: 18px;
+  margin-bottom: 20px;
+}
+
+.service1,
+.service2,
+.service3 {
+  padding: 50px 55px 15px 55px;
+  border-left: 1px solid #660000;
+  margin-left: 5px;
+  margin: 15px 0;
+}
+
+.service1:first-child {
+  border-left: none;
+}
+
+.services h2 {
+  font-size: 30px;
+  color: #fff;
+}
+
+.services p {
+  color: #fff;
+  font-style: italic;
+}
+
+.services img {
+  width: 64px;
+}
+
+
+/*---------------------------------THE FIRM------------------------------------*/
+
+.the-firm {
+  background-color: #fff;
+  padding-top: 336px;
+  margin-top: -196px;
+}
+
+.the-firm .content,
+.attorneys-team .attorneys {
+  margin: auto;
+  width: 100%;
+  max-width: 1633px;
+  display: flex;
+}
+
+.the-firm article {
+  width: 100%;
+  max-width: 565px;
+}
+
+.the-firm h3 {
+  color: #660000;
+  font-weight: 800;
+  padding-bottom: 10px;
+}
+
+
+.the-firm p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+button {
+  background-color: #3B0A0A;
+  padding: 10px 29px;
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+button a {
+  text-decoration: none;
+  font-style: italic;
+  color: #fff;
+}
+
+.the-firm img {
+  width: auto;
+  height: 363px;
+}
+
+.the-firm section h2 {
+  color: #660000;
+  padding-bottom: 10px;
+}
+
+.the-firm section h3 {
+  color: black;
+  font-weight: 800;
+}
+
+.the-firm img {
+  width: 100%;
+  max-width: 544px;
+  margin-top: 68px;
+}
+
+.the-firm section {
+  margin-left: 88px;
+}
+
+.the-firm section .content2,
+.the-firm section .content3 {
+  margin-top: 70px;
+}
+
+/*---------------------------------ATTORNEYS-TEAM------------------------------------*/
+
+.attorneys-team {
+  text-align: center;
+  background-color: #fff;
+  padding-top: 227px;
+}
+
+.title h3,
+.attorneys .atty h4 {
+  color: #660000;
+}
+
+.title h2 {
+  margin-bottom: 35px;
+}
+
+.attorneys-team .attorneys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 60px;
+  margin-bottom: 50px;
+}
+
+.attorneys .atty h3 {
+  margin-top: 10px;
+}
+
+.attorneys img {
+  width: 396px;
+}
+
+.attorneys .atty .socials {
+  margin-top: 20px;
+}
+
+.socials a {
+  padding: 2px;
+}
+
+.attorneys .atty .socials a img {
+  width: 36px;
+  height: auto;
+}
+
+/*---------------------------------ATTORNEYS-TEAM------------------------------------*/
+
+.practice-area {
+  background-color: #fff;
+  padding-top: 227px;
+  margin-bottom: -149px;
+
+}
+
+.practice-area .carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.practice-area .carousel .wrapper {
+  display: flex;
+  width: 100%;
+  max-width: 1717px;
+}
+
+.practice-area .carousel .wrapper section img {
+  position: relative;
+  margin-right: 45px;
+}
+
+
+.practice-area .carousel .wrapper section::after {
+  content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit';
+  font-family: 'Poppins';
+  font-size: 40px;
+  color: #fff;
+  display: block;
+  position: absolute;
+  top: 184px;
+  left: 133px;
+  text-align: center;
+  border: 10px solid #660000;
+  border-radius: 10px;
+  padding: 259px 63px;
+  z-index: 1;
+  width: 100%;
+  max-width: 456px;
+}
+
+.practice-area .carousel .wrapper article h3 {
+  margin-bottom: 10px;
+  color: #660000;
+}
+
+.practice-area .carousel .wrapper article h2 {
+  font-family: 'Poppins';
+  width: 580px;
+}
+
+
+.practice-area .carousel .wrapper .content {
+  margin-top: 116px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 9px;
+  grid-row-gap: 10px;
+}
+
+.practice-area .carousel .wrapper .content div {
+  padding: 30px;
+  text-align: center;
+}
+
+.practice-area .carousel .wrapper .content h3 {
+  padding: 10px;
+  color: #000000;
+}
+
+.practice-area .carousel .wrapper .content p {
+  text-align: start;
+}
+
+.practice-area .carousel .wrapper .content div:hover {
+  background-color: #404144;
+  color: #fff;
+  border-radius: 30px;
+}
+
+.practice-area .carousel .wrapper .content div:hover h3 {
+  color: #660000;
+}
+
+.practice-area .carousel .wrapper .content div:hover img {
+  content: url('images/icons/pactice-area-hover.fw.png');
+}
+
+.practice-area .carousel button {
+  background-color: #fff;
+  padding: 20px;
+  border: none;
+  font-size: 40px;
+}
+
+.practice-area .carousel button:hover {
+  background-color: #660000;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+/*---------------------------------TESTIMONIALS------------------------------------*/
+
+
+.testimonials {
+  position: relative;
+  text-align: center;
+  background-color: #fff;
+  width: 100%;
+}
+
+.testimonials section {
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+
+.title h4 {
+  font-family: 'Poppins';
+  font-weight: 400;
+}
+
+.testimonials .qoute1 {
+  margin-top: 55px;
+}
+
+
+.testimonials section img {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+
+.overlay-text .qoute {
+  width: 560px;
+  margin: auto;
+  padding: 15px;
+}
+
+.testimonials .qoute1 .overlay-text,
+.testimonials .qoute3 .overlay-text {
+  background-color: rgba(252, 252, 252, 0.7);
+  width: 100%;
+  height: 100%;
+}
+
+.testimonials .qoute2 .overlay-text {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  width: 100%;
+  height: 100%;
+}
+
+
+.overlay-text h2::before,
+.overlay-text h2::after {
+  content: '\201C';
+  /* Unicode character for left double quotation mark */
+  font-size: 135px;
+  position: absolute;
+  top: 0;
+  font-family: 'Cooper Black', sans-serif;
+  padding-right: 227px;
+  margin-left: -87px;
+  margin-top: 10px;
+}
+
+.qoute2 .overlay-text h2::before,
+.qoute2 .overlay-text h2::after {
+  margin-top: 25px;
+}
+
+.overlay-text h2::after {
+  transform: scaleX(-1);
+}
+
+
+/*---------------------------------CONTACT US------------------------------------*/
+
+.contact-us {
+  text-align: center;
+  background-color: #fff;
+  width: 100%;
+  padding: 103px;
+}
+
+.contact-us .content {
+  width: 100%;
+  max-width: 1633px;
+  margin: auto;
+}
